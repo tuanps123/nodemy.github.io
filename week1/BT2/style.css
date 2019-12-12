@@ -1,0 +1,41 @@
+.header,.footer{
+    background-color: yellow;
+}
+
+
+.body{
+    display: flex;
+    height: 60vh;
+    /* flex-wrap: wrap; */
+    line-height: 10vh;
+
+}
+.header{
+    margin-bottom: 5px;
+    height: 10vh;
+    padding-left: 50px;
+    line-height: 10vh;
+}
+.footer{
+    margin-top: 5px;
+    height: 10vh;
+    padding-left: 50px;
+    line-height: 10vh;
+}
+.nav{
+    margin-right: 5px;
+width: 20%;
+ padding-left: 50px;
+background-color: yellow;
+}
+.ads{
+   margin-left: 5px;
+    width: 20%;
+    background-color: yellow;
+    padding-left: 50px;
+}
+.article{
+    width: 60%;
+    background-color: yellow;
+    padding-left: 50px;
+}

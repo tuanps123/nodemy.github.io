@@ -1,0 +1,68 @@
+﻿//scope
+//B1:
+	var sum =-1;
+	for(var i = 0; i<100; i++){
+		var sum = i * 100
+	}
+	i =?
+	sum =?
+//B2: 
+	function creatAddStartWith(startNumber){
+		return function(step){
+			startNumber += step;
+			return startNumber;
+		}
+	}
+
+	var add = creatAddStartWith(8);
+
+	add(3);
+	add(2);	
+	add(1);
+	var result = add(0);
+	//result  = ? giai thích
+
+//context
+ //B3:
+	function capitalName(){
+		this.name = this.name.toUpperCase();
+	}
+
+var person1 = {
+  name: 'nam', birthDay: '1996-11-26'
+}
+var person2 = {
+  name: 'hiep', birthDay: '1999-01-26'
+}
+capitalName.call(person1);
+//đọc hiểu được lợi ích của call ,tương tự viết 1 hàm formatBirthDay theo định dạng DD - MM - YYYY áp dụng cho 2 person
+
+B4: 
+	//áp dụng apply tính min cho dãy sau [4,8,9,3,4,7,2,-1,8]	
+B5: // tạo 1 html có 1 button , dùng javascript sử dụng lệnh addEventlistener để gán sự kiến cho function add(number1, number2){}
+	để gán function có nhiều tham số có thể dùng lệnh bind  	
+//settimeout
+B6: gõ search kết quả tìm kiếm liên tục, khi nào dùng gõ 1 giây thì mới in ra kết quả.
+1 input bắt sự kiện onkeypress trong callback sử dụng clearTimeout vs setTimeout để hủy bỏ việc gõ liên tiếp như sau:
+function(value){
+	clearTimeout(typing);
+	var typing = setTimeout(function(){
+		alert('ban da go' + value);
+	} , 1000);
+}
+//setinterval
+B7: dùng interval để cập nhập thời gian hiện tại ra màn hình
+B8: tham khảo interval để tạo progessbar trên W3school
+//promise
+B9: tạo 1 promise1 với tác vụ resovle sau 3 giây (dùng settimeout)
+	tạo 1 promise2 tác vụ resolve sau 2 giây
+	tạo 1 promise3 tác vụ reject sau 2 giây
+dùng .all  để thực hiện song song tác vụ tiết kiệm time.
+B10: promise1 xử lý tác vụ 3s  cho ra kết quả là 2
+	promise2 xử lý tác vụ 3s và CẦN data của tác vụ 1 trả ra kết quả giá trị x3 kết quả tác vụ 1 (=6)
+	promis3 CẦN data của tác vụ 2 để xác định kết quả tác vụ 2 có > 10 hay không
+	in ra màn hình true hoặc false.
+B11: áp dụng hợp lý, promise1 xử lý 2s retrun 3. promise2 xử lý 5s return 7
+	Bài toán Cần data của 2 tác vụ trên, biết prmise1 vs promise2 không phụ thuộc nhau. 
+Viết chương trình sao cho kết quả trả về 3+7=10 trong thời gian ngắn nhất 
+

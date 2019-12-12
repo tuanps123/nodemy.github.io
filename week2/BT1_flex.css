@@ -1,0 +1,32 @@
+.container{
+}
+.body {
+    display: flex;
+    height: 40vh;
+    text-align: center;
+    line-height: 40vh;
+}
+.header{
+    background: blue;
+    margin-bottom: 10px;
+    height: 20vh;
+    text-align: center;
+    line-height: 20vh;
+}
+.sidebar{
+    background: blue;
+    margin-right: 10px;
+    width: 50%;
+}
+.content{
+    background: blue;
+    width: 50%;
+}
+.footer{
+
+    background: blue;
+    margin-top: 10px;
+    height: 20vh;
+    text-align: center;
+    line-height: 20vh;
+}

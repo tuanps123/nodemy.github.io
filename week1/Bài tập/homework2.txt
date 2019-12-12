@@ -1,0 +1,44 @@
+﻿// B1: Tìm hiểu hàm filter và dùng filter lọc ra các số chẵn
+var ages = [32, 33, 12, 40, 1, 1.2];
+
+//Cho persons
+var persons = [
+  {
+    name: "tien",
+    birthday: "30-04-1998"
+  },
+  {
+    name: "tuan anh",
+    birthday: "01-05-1994"
+  },
+  {
+    name: "trung",
+    birthday: "02-09-1997"
+  },
+  {
+    name: "doan",
+    birthday: "23-08-1998"
+  }
+];
+
+//B2: dùng filter tìm ra các bạn sinh từ tháng 6 trở lên (gợi ý dùng Date hoặc tách chuỗi).
+//B3: dùng filter lọc ra những bạn từ 22 tuổi trở lên (gợi ý dùng Date)
+//B4: sắp xếp mảng trên theo thứ tự tuổi tăng dần (sort)
+//B5: sắp xếp mảng trên theo thứ tự tên tăng dần :   (sort) 
+//B6: hãy biến đổi mảng trên sao cho tên của các bạn đều được viết hoa (uppercase, map)
+
+//B7:
+var doan = {
+    name: 'Doan',
+    age: 22,
+    salary: 10000
+}
+var trung = {}
+ // Đoàn là 1 master javascript lương 10k đô, Trung idol Đoàn, Trung quyết định clone mọi thứ từ Đoàn
+//Hãy giúp Trung clone mọi thuộc tính trong vòng 1 nốt nhạc. Để phân biệt thì Trung sẽ thêm 1 property: clone = true (Lưu ý: thay đổi object k làm ảnh hưởng tới Đoàn)
+// {
+//     name: 'Trung',
+//     age: 22,
+//     salary: 10000,
+//     clone: true 
+// }

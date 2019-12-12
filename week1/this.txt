@@ -1,0 +1,12 @@
+var person={
+    name:'aaaa'
+    hello:function(){
+        console.log()
+    }
+}
+
+
+
+Bind thay đổi this, trả về 1 function đã đc gán
+Call thay đổi this và thực thi luôn
+apply thay đổi this và thực thi luôn, cac tham so con lai dc lay qua mang

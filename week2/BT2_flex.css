@@ -1,0 +1,47 @@
+.header{
+    background: brown;
+    height: 120px;
+    width: 900px;
+    text-align: center;
+    line-height: 120px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+.company{
+    background: silver;
+    height: 400px;
+    width: 900px;
+    text-align: center;
+    line-height: 400px;
+    border:1px solid black
+}
+.our-services{
+    height: 100px;
+    width: 900px;
+    text-align: center;
+    line-height: 100px;
+}
+.services{
+    display: flex;
+    flex-wrap:wrap;
+    width: 900px;
+}
+.child-services{
+    background:silver;
+    border:1px solid black;
+    height:220px;
+    width: 180px;
+    text-align: center;
+    line-height: 220px;
+    margin: 55px;
+
+}
+.footer{
+    background: blue;
+    height: 120px;
+    width: 900px;
+    text-align: center;
+    line-height: 120px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}

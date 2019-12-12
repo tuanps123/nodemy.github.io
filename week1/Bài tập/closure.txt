@@ -1,0 +1,42 @@
+﻿// function này để tạo 1 lớp học
+function nodemyCreateClass(){
+  // biến này nằm trong function scope của nodemyCreateClass
+  var studentNumbers = 10;
+  
+  // khi return thì studentNumbers sống ký sinh bên trong thứ được return
+  // ở đây return 1 object nên studentNumbers
+  // nên studentNumbers sẽ sống ký sinh trong object return
+  return {
+    addStudent: function(){
+      studentNumbers++
+    },
+    removeStudent: function(){
+      studentNumbers--
+    },
+    getTotalStudents: function(){
+      console.log(studentNumbers);
+      return studentNumbers;
+    }
+  }
+  
+}
+// ra khỏi function nodemyCreateClass 
+// studentNumbers sẽ chết vì hết scope nodemyCreateClass
+// tuy nhiên studentNumbers vẫn ký sinh trong object được return
+
+
+// lúc này nodemyK1 có 1 ký sinh trùng tên studentNumbers
+// phạm vi studentNumbers sẽ hoạt động trong scope object
+// mà không nơi nào truy suất được studentNumbers ngoài object nodemyK1
+// vì thế studentNumbers được private bảo mật khỏi thế giới bên ngoài
+var nodemyK1 = nodemyCreateClass(); //studentNumbers = 10
+nodemyK1.addStudent() // studentNumbers = 11
+nodemyK1.addStudent() // studentNumbers = 12
+nodemyK1.addStudent() // studentNumbers = 13
+nodemyK1.removeStudent() // studentNumbers = 12
+nodemyK1.getTotalStudents() // log ra 12 và trả về 12
+
+// nodemyK2 là 1 lớp khác nên nodemyK2 sẽ có studentNumbers ký sinh mới
+// studentNumbers trong nodemyK2 lúc này = 10
+var nodemyK2 = nodemyCreateClass();
+nodemyK2.getTotalStudents()
